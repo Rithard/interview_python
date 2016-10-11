@@ -819,6 +819,7 @@ Bulid过程可以分解为4个步骤:预处理(Prepressing), 编译(Compilation)
 
 ## 3 Redis原理
 
+阅读：http://www.infoq.com/cn/articles/tq-redis-memory-usage-optimization-storage/
 
 ## 4 乐观锁和悲观锁
 
@@ -828,6 +829,7 @@ Bulid过程可以分解为4个步骤:预处理(Prepressing), 编译(Compilation)
 
 ## 5 MVCC
 
+阅读：http://coolshell.cn/articles/6790.html
 
 ## 6 MyISAM和InnoDB
 
