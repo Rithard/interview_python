@@ -827,9 +827,11 @@ Bulid过程可以分解为4个步骤:预处理(Prepressing), 编译(Compilation)
 
 乐观锁：假设不会发生并发冲突，只在提交操作时检查是否违反数据完整性。
 
-## 5 MVCC
+## 5 MVCC（多版本并发控制）
 
 阅读：http://coolshell.cn/articles/6790.html
+
+大多数的MySQL事务型存储引擎，如InnoDB，Falcon以及PBXT都不使用一种简单的行锁机制。事实上，他们都和另外一种用来增加并发性的被称为“多版本并发控制（MVCC）”的机制来一起使用。MVCC不只使用在MySQL中，Oracle、PostgreSQL，以及其他一些数据库系统也同样使用它。你可将MVCC看成行级别锁的一种妥协，它在许多情况下避免了使用锁，同时可以提供更小的开销。根据实现的不同，它可以允许非阻塞式读，在写操作进行时只锁定必要的记录。
 
 ## 6 MyISAM和InnoDB
 
